@@ -1,40 +1,55 @@
-// .feature-list {
-//     color: var(--primary-text-color);
-//     font-family: Roboto, sans-serif;
-//     font-size: 700;
-//     list-style: none;
-//     display: flex;
-//   }
-//   .title-feature {
-//     color: var(--primary-text-color);
-//     font-family: Roboto, sans-serif;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     margin-bottom: 10px;
-//   }
-//   .feature-item {
-//     margin-right: 30px;
-//   }
-//   .feature-item:last-child {
-//     margin-right: 0;
-//   }
-//   .feature-icon-bg {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     margin-bottom: 30px;
-//     height: 120px;
-//     width: 270px;
-//     border-radius: 4px;
-//     background: #f5f4fa;
-//   }
-//   .feature {
-//     font-family: Roboto, sans-serif;
-//     line-height: 1.71;
-//     color: var(--secondary-text-color);
-//     width: 270px;
-//     height: 75px;
-//   }
-//   .box-section {
-//     padding-top: 0px;
-//   }
+.feature-list {
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+.feature-item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 120px) / 4);
+  }
+}
+
+.title-feature {
+  text-align: center;
+  color: $primary-title-color;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+}
+.feature-icon-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-bottom: 30px;
+  padding: 25px 0;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+.feature__icon {
+  width: 70px;
+  height: 70px;
+}

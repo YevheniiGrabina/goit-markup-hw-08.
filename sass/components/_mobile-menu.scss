@@ -4,6 +4,7 @@
   cursor: pointer;
   padding: 0;
   line-height: 0;
+  
   &:hover,
   &:focus {
     fill: $accent-color;
@@ -29,13 +30,14 @@
   visibility: hidden;
   pointer-events: none;
   background-color: $secondary-text-color;
-
-  &.is-open {
+  transition: opasity 250ms linear, visibility 250ms linear;
+}
+  .mobile-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
   }
-}
+
 
 .close {
   position: absolute;
