@@ -1,0 +1,43 @@
+body {
+  text-decoration: none;
+  background-color: var(--primary-title-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, Raleway, sans-serif;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.checbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.list {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+}
+img {
+  display: block;
+}
+.title {
+  display: none;
+}

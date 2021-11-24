@@ -1,0 +1,40 @@
+// .client-list {
+//   display: flex;
+//   list-style: none;
+//   box-sizing: border-box;
+// }
+// .client-item {
+//   margin-right: 30px;
+//   justify-content: center;
+// }
+// .client-item:last-child {
+//   margin-right: 0;
+// }
+// .client-box {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 92px;
+//   width: 170px;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   fill: #afb1b8;
+//   transition: border-color 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//     border-color: var(--accent-color);
+//   }
+// }
+// .client-icon {
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   transition: fill 250ms linear;
+
+//   &:hover,
+//   &:focus {
+//     fill: var(--accent-color);
+//     border-color: var(--accent-color);
+//   }
+// }
