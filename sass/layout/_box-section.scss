@@ -1,0 +1,38 @@
+.business {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.section--other-padding {
+  padding-top: 0px;
+}
+.business-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    position: absolute;
+    bottom: 27px;
+    left: 83px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-title-color;
+  }
+}
+.business-list__work {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

@@ -85,8 +85,15 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .logo {
@@ -757,6 +764,7 @@ img {
 }
 
 .title-feature {
+  list-style: none;
   text-align: center;
   color: #212121;
   font-weight: 700;
