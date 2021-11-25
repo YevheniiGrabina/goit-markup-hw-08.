@@ -1,5 +1,5 @@
 .burger {
-  background-color: $secondary-text-color;
+  background-color:  $primary-title-color;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -29,7 +29,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color: $secondary-text-color;
+  background-color:  $primary-title-color;
   transition: opasity 250ms linear, visibility 250ms linear;
 }
   .mobile-menu.is-open {
@@ -43,7 +43,7 @@
   position: absolute;
   top: 10px;
   right: 15px;
-  background-color: $secondary-text-color;
+  background-color: $primary-text-color;
   border: none;
   cursor: pointer;
   padding: 0;
@@ -70,7 +70,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.02em;
-  color: $primary-title-color;
+  color: $primary-text-color;
 
   &:hover,
   &:focus {
