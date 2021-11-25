@@ -35,7 +35,7 @@
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   text-decoration: none;
   list-style: none;
   display: block;
@@ -52,11 +52,11 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   text-decoration: none;
 }
 .contacts__mail {
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -67,12 +67,12 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
 .contacts__tel {
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -83,7 +83,7 @@
 
   &:hover,
   &:focus {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 .footer.left {
@@ -165,20 +165,20 @@
 
   &:hover,
   &:focus {
-    fill: var(--primary-title-color);
-    background-color: var(--accent-color);
+    fill: $primary-title-color;
+    background-color: $accent-color;
   }
 }
 .footer-social__list:last-child {
   margin-right: 0;
 }
 .footer-social__icon {
-  fill: var(--primary-title-color);
+  fill: $primary-title-color;
   transition: fill 250ms linear;
 
   &:hover,
   &:focus {
-    fill: var(--primary-title-color);
+    fill: $primary-title-color;
   }
 }
 .footer-subscribe {
@@ -214,7 +214,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   justify-content: flex-end;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
 }
 .footer-form__input {
   width: 358px;
@@ -225,7 +225,7 @@
   background: #2f303a;
   margin-right: 12px;
   padding-left: 16px;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
 
   &:hover,
   &:focus {
@@ -247,7 +247,7 @@
   background: #2196f3;
   border-radius: 4px;
   border-color: transparent;
-  color: var(--primary-title-color);
+  color: $primary-title-color;
   transition: box-shadow 250ms linear, background-color 250ms linear;
 
   &:focus,
