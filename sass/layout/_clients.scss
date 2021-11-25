@@ -1,41 +1,39 @@
-.client-list  {
-    
-    display: flex;
-    @media screen and (max-width: 767px) {
-        flex-wrap: wrap;
-        margin: -15px;
-        }
-    @media (min-width: $tablet) and (max-width: 1199px) {
-        flex-wrap: wrap;
-        margin: -15px;
-        }
-    @media screen and (min-width: $desktop) {
-        margin: -15px;
-        }
+.client-list {
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -15px;
+  }
+}
 .client-item {
-  
-    display: flex;
-    @media screen and (max-width: 767px) {
-        flex-wrap: wrap;
-        margin: -15px;
-        }
-    @media (min-width: $tablet) and (max-width: 1199px) {
-        flex-wrap: wrap;
-        margin: -15px;
-        }
-    @media screen and (min-width: $desktop) {
-        margin: -15px;
-        }
+  display: flex;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin: -15px;
+  }
 }
 .client-item:last-child {
   margin-right: 0;
 }
 .client-box {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 92px;
-  width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
@@ -43,6 +41,6 @@
 
   &:hover,
   &:focus {
-    fill:$accent-color;
+    fill: $accent-color;
   }
-
+}

@@ -11,8 +11,8 @@
 
 body {
   text-decoration: none;
-  background-color: var(--primary-title-color);
-  color: var(--primary-text-color);
+  background-color: #ffffff;
+  color: #212121;
   font-family: Roboto, Raleway, sans-serif;
 }
 
@@ -27,6 +27,7 @@ h6 {
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -861,7 +862,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: var(--primary-title-color);
+  color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -883,6 +884,7 @@ img {
 }
 
 .team-list {
+  display: flex;
   list-style: none;
 }
 
@@ -910,12 +912,12 @@ img {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: var(--primary-text-color);
+  color: #212121;
 }
 
 .team-card-text {
   font-family: Roboto, sans-serif;
-  color: var(--secondary-text-color);
+  color: #757575;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 10px;
@@ -958,7 +960,7 @@ img {
 
 .social-link:hover, .social-link:focus {
   fill: var(--primary-title-color);
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .team-icon {
@@ -966,7 +968,7 @@ img {
 }
 
 .team-icon:hover, .team-icon:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .client-list {
@@ -993,56 +995,46 @@ img {
   }
 }
 
-.client-list .client-item {
+.client-item {
   display: flex;
 }
 
 @media screen and (max-width: 767px) {
-  .client-list .client-item {
+  .client-item {
     flex-wrap: wrap;
     margin: -15px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .client-list .client-item {
+  .client-item {
     flex-wrap: wrap;
     margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .client-list .client-item {
+  .client-item {
     margin: -15px;
   }
 }
 
-.client-list .client-item:last-child {
+.client-item:last-child {
   margin-right: 0;
 }
 
-.client-list .client-box {
+.client-box {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 92px;
-  width: 170px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
   transition: border-color 250ms linear;
 }
 
-.client-list .client-box:hover, .client-list .client-box:focus {
+.client-box:hover, .client-box:focus {
   fill: #2196f3;
-  border-color: #2196f3;
-}
-
-.client-list .client-icon {
-  width: 106px;
-  height: 60px;
-  transition: fill 250ms linear;
-  fill: #2196f3;
-  border-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */
