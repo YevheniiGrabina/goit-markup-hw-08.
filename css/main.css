@@ -758,7 +758,7 @@ img {
 
 .title-feature {
   text-align: center;
-  color: #ffffff;
+  color: #212121;
   font-weight: 700;
   line-height: 1.1;
   margin-bottom: 10px;
@@ -779,7 +779,7 @@ img {
   margin-bottom: 30px;
   padding: 25px 0;
   border-radius: 4px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .feature__icon {
