@@ -1,10 +1,10 @@
 .burger {
-  background-color:  $primary-title-color;
+  background-color: $primary-title-color;
   border: none;
   cursor: pointer;
   padding: 0;
   line-height: 0;
-  
+
   &:hover,
   &:focus {
     fill: $accent-color;
@@ -29,21 +29,20 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  background-color:  $primary-title-color;
+  background-color: $primary-title-color;
   transition: opasity 250ms linear, visibility 250ms linear;
 }
-  .mobile-menu.is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: all;
-  }
-
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
 
 .close {
   position: absolute;
   top: 10px;
   right: 15px;
-  background-color: $primary-text-color;
+  background-color: $primary-title-color;
   border: none;
   cursor: pointer;
   padding: 0;
