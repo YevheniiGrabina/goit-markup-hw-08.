@@ -119,7 +119,7 @@
     width: 16px;
     height: 15px;
     margin-right: 7px;
-    background-image: url(/images/iconcheck.svg);
+    background-image: url(../images/iconcheck.svg);
     transition: background-image 250ms linear;
   }
 }
@@ -130,7 +130,7 @@
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
-  background-image: url(/images/iconcheck.svg);
+  background-image: url(../images/iconcheck.svg);
 }
 .modal-form__checkbox:focus + .modal-form__check::before {
   fill: $accent-color;

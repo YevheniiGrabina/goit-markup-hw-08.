@@ -310,7 +310,7 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-image: url(/images/iconcheck.svg);
+  background-image: url(../images/iconcheck.svg);
   transition: background-image 250ms linear;
 }
 
@@ -320,7 +320,7 @@ img {
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
-  background-image: url(/images/iconcheck.svg);
+  background-image: url(../images/iconcheck.svg);
 }
 
 .modal-form__checkbox:focus + .modal-form__check::before {
@@ -704,7 +704,7 @@ img {
   margin-right: auto;
   background-color: #c4c4c4;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero480@1x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero480@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -712,19 +712,19 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("/images/hero/hero480@2x.jpg");
+    background-image: url("../images/hero/hero480@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero768@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero768@1x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("/images/hero/hero768@2x.jpg");
+    background-image: url("../images/hero/hero768@2x.jpg");
   }
 }
 
@@ -734,13 +734,13 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/hero1200@1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero1200@1x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("/images/hero/hero1200@2x.jpg");
+    background-image: url("../images/hero/hero1200@2x.jpg");
   }
 }
 
