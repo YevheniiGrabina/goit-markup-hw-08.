@@ -38,6 +38,10 @@
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
 }
+.btn-active {
+  background-color: $accent-color;
+  color: #ffffff;
+}
 
 .filter__item {
   &:not(:last-child) {
