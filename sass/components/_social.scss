@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    transition: color 250ms linear, background-color 250ms linear;
+    transition: fill 250ms linear, background-color 250ms linear;
   }
 
   &__icon {
@@ -19,6 +19,6 @@
   }
 }
 
-.team-social.social__item + .tiam-social__item {
+.team-social.social__item + .tiam-social__icon {
   margin-left: 10px;
 }
