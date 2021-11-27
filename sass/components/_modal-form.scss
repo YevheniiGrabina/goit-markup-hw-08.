@@ -119,14 +119,14 @@
     width: 16px;
     height: 15px;
     margin-right: 7px;
-    background-image: url(../images/iconcheck.svg);
+    background-image: url(../images/vectorcheck.svg);
     transition: background-image 250ms linear;
   }
 }
 
 .modal-form__link {
   text-decoration: underline;
-  color: $accent-color;
+  color: #0000ee;
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
@@ -169,4 +169,12 @@
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+.modal-icon {
+  transition: fill 250ms linear;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: $accent-color;
 }

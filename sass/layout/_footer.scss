@@ -39,7 +39,15 @@
   text-decoration: none;
   list-style: none;
   display: block;
+
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
+
 .contacts__item {
   margin-bottom: 9px;
 }
@@ -88,7 +96,8 @@
 }
 .footer-left {
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;}
+    margin-bottom: 60px;
+  }
   @media (min-width: $tablet) and (max-width: 1199px) {
   }
   @media (min-width: $tablet) and (max-width: 1199px) {
@@ -229,6 +238,14 @@
   padding-left: 16px;
   color: $primary-title-color;
 
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
   &:hover,
   &:focus {
     background: #2f303a;
@@ -251,6 +268,13 @@
   border-color: transparent;
   color: $primary-title-color;
   transition: box-shadow 250ms linear, background-color 250ms linear;
+
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 12px;
+  }
 
   &:focus,
   &:hover {

@@ -310,13 +310,13 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-image: url(../images/iconcheck.svg);
+  background-image: url(../images/vectorcheck.svg);
   transition: background-image 250ms linear;
 }
 
 .modal-form__link {
   text-decoration: underline;
-  color: #2196f3;
+  color: #0000ee;
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
@@ -358,6 +358,15 @@ img {
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+.modal-icon {
+  transition: fill 250ms linear;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: #2196f3;
 }
 
 .burger {
@@ -534,7 +543,7 @@ img {
   fill: #afb1b8;
 }
 
-.team-social.social__item + .tiam-social__icon {
+.team-social.social__item + .tiam-social__item {
   margin-left: 10px;
 }
 
@@ -954,7 +963,7 @@ img {
   color: #757575;
 }
 
-.team-list__network {
+.team-list-social {
   margin-top: 16px;
 }
 
@@ -1082,6 +1091,15 @@ img {
   text-decoration: none;
   list-style: none;
   display: block;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .contacts__item {
@@ -1300,6 +1318,19 @@ img {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-form__input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .footer-form__input {
+    margin-bottom: 20px;
+  }
+}
+
 .footer-form__input:hover, .footer-form__input:focus {
   background: #2f303a;
 }
@@ -1321,6 +1352,18 @@ img {
   border-color: transparent;
   color: #ffffff;
   transition: box-shadow 250ms linear, background-color 250ms linear;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-form__button {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__button {
+    margin-left: 12px;
+  }
 }
 
 .footer-form__button:focus, .footer-form__button:hover {
