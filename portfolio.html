@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -23,19 +23,18 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="container">
+         <nav class="main-nav">
         <a class="logo" href="index.html" lang="en">
           <span class="web">Web</span><span class="studio">Studio</span></a
         >
-        <nav class="main-nav">
-          <ul class="site-nav">
+        
+          <ul class="site-nav site-nav--margin">
             <li class="site-nav__item">
-              <a href="../index.html" class="site-nav__link">Студия</a>
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="../portfolio.html" class="site-nav__link--current"
-                >Портфолио</a
-              >
+              <a href="./portfolio.html" class="site-nav__link--current">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="#" class="site-nav__link">Контакты</a>
@@ -46,7 +45,7 @@
           <li class="contact-nav__item">
             <a href="mailto:info@devstudio.com" class="contact-nav__link">
               <svg class="contact-nav__icon" width="16px" height="16px">
-                <use href="../images/icons.svg#icon-mail"></use>
+                <use href="./images/icons.svg#icon-mail"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -54,7 +53,7 @@
           <li class="contact-nav__item">
             <a href="tel:+380961111111" class="contact-nav__link">
               <svg class="contact-nav__icon" width="16px" height="16px">
-                <use href="../images/icons.svg#icon-tel"></use>
+                <use href="./images/icons.svg#icon-tel"></use>
               </svg>
               +380961111111
             </a>
@@ -62,22 +61,22 @@
         </ul>
         <button class="burger" data-menu-open type="button">
           <svg class="burger__icon">
-            <use href="../images/icons.svg#icon-menu"></use>
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
         <div class="mobile-menu" data-menu>
           <button type="button" class="close" data-menu-close>
             <svg class="close__icon">
-              <use href="../images/icons.svg#icon-close_menu"></use>
+              <use href="./images/icons.svg#icon-close_menu"></use>
             </svg>
           </button>
           <div class="mobile-menu__nav">
             <ul class="mobile-nav">
               <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="../index.html">Студия</a>
+                <a class="mobile-nav__link" href="./index.html">Студия</a>
               </li>
               <li class="mobile-nav__item">
-                <a class="mobile-nav__link" href="../portfolio.html"
+                <a class="mobile-nav__link" href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
@@ -141,40 +140,40 @@
                   <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project1-1200@x1.webp 1x,
-                                    ../images/portfolio/project1-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project1-1200@x1.webp 1x,
+                                    ./images/portfolio/project1-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project1-1200@x1.jpg 1x,
-                                    ../images/portfolio/project1-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project1-1200@x1.jpg 1x,
+                                    ./images/portfolio/project1-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project1-768@x1.webp 1x,
-                                    ../images/portfolio//project1-768@2x.webp 2x
+                                    srcset="./images/portfolio/project1-768@x1.webp 1x,
+                                    ./images/portfolio//project1-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio//project1-768@x1.jpg 1x,
-                                    ../images/portfolio//project1-768@2x.jpg 2x"
+                                    ./images/portfolio//project1-768@x1.jpg 1x,
+                                    ./images/portfolio//project1-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio//project1-480@x1.webp 1x,
-                                    ../images/portfolio//project1-480@2x.webp 2x"
+                                    ./images/portfolio//project1-480@x1.webp 1x,
+                                    ./images/portfolio//project1-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project1-480@.jpg 1x,
-                                    ../images/portfolio/project1-480@2x.jpg 2x"
+                                    ./images/portfolio/project1-480@.jpg 1x,
+                                    ./images/portfolio/project1-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -199,40 +198,40 @@
                   <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project2-1200@x1.webp 1x,
-                                    ../images/portfolio/project2-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project2-1200@x1.webp 1x,
+                                    ./images/portfolio/project2-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project2-1200.jpg 1x,
-                                    ../images/portfolio/project2-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project2-1200.jpg 1x,
+                                    ./images/portfolio/project2-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project2-768.webp 1x,
-                                    ../images/portfolio/project2-768@2x.webp 2x
+                                    srcset="./images/portfolio/project2-768.webp 1x,
+                                    ./images/portfolio/project2-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project2-768.jpg 1x,
-                                    ../images/portfolio/project2-768@2x.jpg 2x"
+                                    ./images/portfolio/project2-768.jpg 1x,
+                                    ./images/portfolio/project2-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project2-480.webp 1x,
-                                    ../images/portfolio/project2-480@2x.webp 2x"
+                                    ./images/portfolio/project2-480.webp 1x,
+                                    ./images/portfolio/project2-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project2-480.jpg 1x,
-                                    ../images/portfolioproject2-480@2x.jpg 2x"
+                                    ./images/portfolio/project2-480.jpg 1x,
+                                    ./images/portfolioproject2-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -259,40 +258,40 @@
                   <picture>
                                    <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project3-1200@x1.webp 1x,
-                                    ../images/portfolio/project3-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project3-1200@x1.webp 1x,
+                                    ./images/portfolio/project3-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project3-1200.jpg 1x,
-                                    ../images/portfolio/project3-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project3-1200.jpg 1x,
+                                    ./images/portfolio/project3-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project3-768.webp 1x,
-                                    ../images/portfolio/project3-768@2x.webp 2x
+                                    srcset="./images/portfolio/project3-768.webp 1x,
+                                    ./images/portfolio/project3-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project3-768.jpg 1x,
-                                    ../images/portfolio/project3-768@2x.jpg 2x"
+                                    ./images/portfolio/project3-768.jpg 1x,
+                                    ./images/portfolio/project3-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project3-480.webp 1x,
-                                    ../images/portfolio/project3-480@2x.webp 2x"
+                                    ./images/portfolio/project3-480.webp 1x,
+                                    ./images/portfolio/project3-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project3-480.jpg 1x,
-                                    ../images/portfolioproject3-480@2x.jpg 2x"
+                                    ./images/portfolio/project3-480.jpg 1x,
+                                    ./images/portfolioproject3-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -319,40 +318,40 @@
                  <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project4-1200@x1.webp 1x,
-                                    ../images/portfolio/project4-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project4-1200@x1.webp 1x,
+                                    ./images/portfolio/project4-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project4-1200.jpg 1x,
-                                    ../images/portfolio/project4-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project4-1200.jpg 1x,
+                                    ./images/portfolio/project4-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project4-768.webp 1x,
-                                    ../images/portfolio/project4-768@2x.webp 2x
+                                    srcset="./images/portfolio/project4-768.webp 1x,
+                                    ./images/portfolio/project4-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project4-768.jpg 1x,
-                                    ../images/portfolio/project4-768@2x.jpg 2x"
+                                    ./images/portfolio/project4-768.jpg 1x,
+                                    ./images/portfolio/project4-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project4-480.webp 1x,
-                                    ../images/portfolio/project4-480@2x.webp 2x"
+                                    ./images/portfolio/project4-480.webp 1x,
+                                    ./images/portfolio/project4-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project4-480.jpg 1x,
-                                    ../images/portfolioproject4-480@2x.jpg 2x"
+                                    ./images/portfolio/project4-480.jpg 1x,
+                                    ./images/portfolioproject4-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -379,40 +378,40 @@
                   <picture>
                                    <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project5-1200@x1.webp 1x,
-                                    ../images/portfolio/project5-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project5-1200@x1.webp 1x,
+                                    ./images/portfolio/project5-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project5-1200.jpg 1x,
-                                    ../images/portfolio/project5-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project5-1200.jpg 1x,
+                                    ./images/portfolio/project5-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project5-768.webp 1x,
-                                    ../images/portfolio/project5-768@2x.webp 2x
+                                    srcset="./images/portfolio/project5-768.webp 1x,
+                                    ./images/portfolio/project5-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project5-768.jpg 1x,
-                                    ../images/portfolio/project5-768@2x.jpg 2x"
+                                    ./images/portfolio/project5-768.jpg 1x,
+                                    ./images/portfolio/project5-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project5-480.webp 1x,
-                                    ../images/portfolio/project5-480@2x.webp 2x"
+                                    ./images/portfolio/project5-480.webp 1x,
+                                    ./images/portfolio/project5-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project5-480.jpg 1x,
-                                    ../images/portfolioproject5-480@2x.jpg 2x"
+                                    ./images/portfolio/project5-480.jpg 1x,
+                                    ./images/portfolioproject5-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -439,40 +438,40 @@
                   <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project6-1200@x1.webp 1x,
-                                    ../images/portfolio/project6-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project6-1200@x1.webp 1x,
+                                    ./images/portfolio/project6-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project6-1200.jpg 1x,
-                                    ../images/portfolio/project6-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project6-1200.jpg 1x,
+                                    ./images/portfolio/project6-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project6-768.webp 1x,
-                                    ../images/portfolio/project6-768@2x.webp 2x
+                                    srcset="./images/portfolio/project6-768.webp 1x,
+                                    ./images/portfolio/project6-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project6-768.jpg 1x,
-                                    ../images/portfolio/project6-768@2x.jpg 2x"
+                                    ./images/portfolio/project6-768.jpg 1x,
+                                    ./images/portfolio/project6-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project6-480.webp 1x,
-                                    ../images/portfolio/project6-480@2x.webp 2x"
+                                    ./images/portfolio/project6-480.webp 1x,
+                                    ./images/portfolio/project6-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project6-480.jpg 1x,
-                                    ../images/portfolioproject6-480@2x.jpg 2x"
+                                    ./images/portfolio/project6-480.jpg 1x,
+                                    ./images/portfolioproject6-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -499,40 +498,40 @@
                   <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project7-1200@x1.webp 1x,
-                                    ../images/portfolio/project7-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project7-1200@x1.webp 1x,
+                                    ./images/portfolio/project7-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project7-1200.jpg 1x,
-                                    ../images/portfolio/project7-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project7-1200.jpg 1x,
+                                    ./images/portfolio/project7-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project7-768.webp 1x,
-                                    ../images/portfolio/project7-768@2x.webp 2x
+                                    srcset="./images/portfolio/project7-768.webp 1x,
+                                    ./images/portfolio/project7-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project7-768.jpg 1x,
-                                    ../images/portfolio/project7-768@2x.jpg 2x"
+                                    ./images/portfolio/project7-768.jpg 1x,
+                                    ./images/portfolio/project7-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project7-480.webp 1x,
-                                    ../images/portfolio/project7-480@2x.webp 2x"
+                                    ./images/portfolio/project7-480.webp 1x,
+                                    ./images/portfolio/project7-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project7-480.jpg 1x,
-                                    ../images/portfolioproject7-480@2x.jpg 2x"
+                                    ./images/portfolio/project7-480.jpg 1x,
+                                    ./images/portfolioproject7-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -559,40 +558,40 @@
                   <picture>
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project8-1200@x1.webp 1x,
-                                    ../images/portfolio/project8-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project8-1200@x1.webp 1x,
+                                    ./images/portfolio/project8-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project8-1200.jpg 1x,
-                                    ../images/portfolio/project8-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project8-1200.jpg 1x,
+                                    ./images/portfolio/project8-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project8-768.webp 1x,
-                                    ../images/portfolio/project8-768@2x.webp 2x
+                                    srcset="./images/portfolio/project8-768.webp 1x,
+                                    ./images/portfolio/project8-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project8-768.jpg 1x,
-                                    ../images/portfolio/project8-768@2x.jpg 2x"
+                                    ./images/portfolio/project8-768.jpg 1x,
+                                    ./images/portfolio/project8-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project8-480.webp 1x,
-                                    ../images/portfolio/project8-480@2x.webp 2x"
+                                    ./images/portfolio/project8-480.webp 1x,
+                                    ./images/portfolio/project8-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project8-480.jpg 1x,
-                                    ../images/portfolioproject8-480@2x.jpg 2x"
+                                    ./images/portfolio/project8-480.jpg 1x,
+                                    ./images/portfolioproject8-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -619,40 +618,40 @@
                   <picture>
                                    <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project9-1200@x1.webp 1x,
-                                    ../images/portfolio/project9-1200@2x.webp 2x"
+                                    srcset="./images/portfolio/project9-1200@x1.webp 1x,
+                                    ./images/portfolio/project9-1200@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 1200px)"
-                                    srcset="../images/portfolio/project9-1200.jpg 1x,
-                                    ../images/portfolio/project9-1200@2x.jpg 2x"
+                                    srcset="./images/portfolio/project9-1200.jpg 1x,
+                                    ./images/portfolio/project9-1200@2x.jpg 2x"
                                     >
                                     <source
                                     media="(min-width: 768px)"
-                                    srcset="../images/portfolio/project9-768.webp 1x,
-                                    ../images/portfolio/project9-768@2x.webp 2x
+                                    srcset="./images/portfolio/project9-768.webp 1x,
+                                    ./images/portfolio/project9-768@2x.webp 2x
                                     "
                                     type="image/webp"
                                     >
                                     <source
                                     media="(min-width: 768px)"
                                     srcset="
-                                    ../images/portfolio/project9-768.jpg 1x,
-                                    ../images/portfolio/project9-768@2x.jpg 2x"
+                                    ./images/portfolio/project9-768.jpg 1x,
+                                    ./images/portfolio/project9-768@2x.jpg 2x"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project9-480.webp 1x,
-                                    ../images/portfolio/project9-480@2x.webp 2x"
+                                    ./images/portfolio/project9-480.webp 1x,
+                                    ./images/portfolio/project9-480@2x.webp 2x"
                                     type="image/webp"
                                     >
                                     <source
                                     media="(max-width: 767px)"
                                     srcset="
-                                    ../images/portfolio/project9-480.jpg 1x,
-                                    ../images/portfolio/project9-480@2x.jpg 2x"
+                                    ./images/portfolio/project9-480.jpg 1x,
+                                    ./images/portfolio/project9-480@2x.jpg 2x"
                                     >
                                     <img
                                     src="#"
@@ -698,28 +697,28 @@
             <li class="footer-social__list">
               <a href="#" class="footer-social__link">
                 <svg class="footer-social__icon"  width="20" height="20">
-                  <use href="../images/icons.svg#icon-instagram"></use>
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social__list">
               <a href="#" class="footer-social__link">
                 <svg class="footer-social__icon"  width="20" height="20">
-                  <use href="../images/icons.svg#icon-twitter"></use>
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social__list">
               <a href="#" class="footer-social__link">
                 <svg class="footer-social__icon"  width="20" height="20">
-                  <use href="../images/icons.svg#icon-facebook"></use>
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social__list">
               <a href="#" class="footer-social__link">
                 <svg class="footer-social__icon"  width="20" height="20">
-                  <use href="../images/icons.svg#icon-linkedin"></use>
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -732,13 +731,13 @@
                   <input class="footer-form__input" type="email"  name="email" id="email"  placeholder="E-mail"/>
               <button type="button" class="footer-form__button">Подписаться 
                 <svg class="footer-form__icon"  width="24" height="24">
-                  <use href="../images/icons.svg#icon-icon-send"></use>
+                  <use href="./images/icons.svg#icon-icon-send"></use>
                 </svg>
               </button>
             </form>
               </div>
       </div>
     </footer>
-    <script src="../js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
