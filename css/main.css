@@ -186,7 +186,6 @@ img {
   display: flex;
   flex-direction: column;
   padding: 40px;
-  text-align: left;
 }
 
 .modal-form__title {
@@ -285,13 +284,27 @@ img {
 }
 
 .modal-form__check {
+  position: relative;
   font-size: 12px;
-  line-height: 1.16px;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form__check {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check {
+    position: static;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -306,9 +319,29 @@ img {
   content: "";
   width: 16px;
   height: 15px;
+  left: 0;
   margin-right: 7px;
   border: 2px solid #2196f3;
   transition: background-image 250ms linear;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-form__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form__check {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__link {
@@ -317,6 +350,7 @@ img {
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
+  border: none;
   background-image: url(../images/iconcheck.svg);
 }
 
@@ -402,6 +436,12 @@ img {
   transition: opasity 250ms linear, visibility 250ms linear;
 }
 
+@media screen and (min-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
@@ -444,6 +484,19 @@ img {
 }
 
 .mobile-nav__link:hover, .mobile-nav__link:focus {
+  color: #2196f3;
+}
+
+.mobile-nav {
+  margin-bottom: 30px;
+}
+
+.mobile-nav__link--current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
   color: #2196f3;
 }
 
@@ -699,6 +752,18 @@ img {
 
 .contact-nav__icon:hover, .contact-nav__icon:focus {
   fill: #2196f3;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .mail {
+    padding-top: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .tel {
+    padding-bottom: 10px;
+  }
 }
 
 .hero-section {
@@ -1007,6 +1072,11 @@ img {
   }
 }
 
+.clients-list__item {
+  height: 92px;
+  margin: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .clients-list__item {
     margin: 15px;
@@ -1047,7 +1117,6 @@ img {
 
 .clients-list__icon {
   width: 106px;
-  height: 60px;
   fill: currentColor;
 }
 

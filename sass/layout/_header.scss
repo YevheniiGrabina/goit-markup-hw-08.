@@ -74,7 +74,6 @@
   }
 }
 .contact-nav {
-  
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -134,5 +133,15 @@
   &:hover,
   &:focus {
     fill: $accent-color;
+  }
+}
+.mail {
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    padding-top: 10px;
+  }
+}
+.tel {
+  @media (min-width: $tablet) and (max-width: 1199px) {
+    padding-bottom: 10px;
   }
 }

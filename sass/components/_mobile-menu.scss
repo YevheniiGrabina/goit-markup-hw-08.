@@ -31,6 +31,10 @@
   pointer-events: none;
   background-color: $primary-title-color;
   transition: opasity 250ms linear, visibility 250ms linear;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 .mobile-menu.is-open {
   opacity: 1;
@@ -76,7 +80,17 @@
     color: $accent-color;
   }
 }
-
+.mobile-nav {
+  margin-bottom: 30px;
+}
+.mobile-nav__link--current {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
 .mobile-menu__auth {
   display: block;
 }
