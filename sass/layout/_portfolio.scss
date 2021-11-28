@@ -82,10 +82,6 @@
     }
   }
 
-  &__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-
   &__info {
     padding: 20px 24px;
   }
@@ -135,7 +131,7 @@
     letter-spacing: 0.03em;
     color: $primary-title-color;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms linear;
   }
 }

@@ -30,7 +30,7 @@
   visibility: hidden;
   pointer-events: none;
   background-color: $primary-title-color;
-  transition: opasity 250ms linear, visibility 250ms linear;
+  transition: visibility 250ms linear, opacity 250ms linear;
 
   @media screen and (min-width: 767px) {
     display: none;
