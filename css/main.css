@@ -63,8 +63,7 @@ img {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -140,34 +139,32 @@ img {
 
 .modal {
   position: absolute;
+  width: 100%;
+  min-height: 581px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  background: #ffffff;
+  transform: translate(-50%, -50%) scale(1) rotate(0deg);
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  transition: transform 500ms linear;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
   }
 }
 
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
+  transition: transform 500ms linear;
 }
 
 .backdrop {
@@ -310,13 +307,13 @@ img {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  background-image: url(../images/vectorcheck.svg);
+  border: 2px solid #2196f3;
   transition: background-image 250ms linear;
 }
 
 .modal-form__link {
   text-decoration: underline;
-  color: #0000ee;
+  color: #2196f3;
 }
 
 .modal-form__checkbox:checked + .modal-form__check::before {
@@ -721,7 +718,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("../images/hero/Hero480@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Hero480@2x.jpg");
   }
 }
 
@@ -733,7 +730,7 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("../images/hero/Hero768@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Hero768@2x.jpg");
   }
 }
 
@@ -749,7 +746,7 @@ img {
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url("../images/hero/Hero1200@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/Hero1200@2x.jpg");
   }
 }
 
@@ -757,12 +754,18 @@ img {
   color: #ffffff;
   margin: 0 auto;
   margin-bottom: 30px;
-  width: 360px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .header-btn {
@@ -839,7 +842,6 @@ img {
   justify-content: center;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 0;
   border-radius: 4px;
   background-color: #f5f4fa;
 }
@@ -847,6 +849,11 @@ img {
 .feature__icon {
   width: 70px;
   height: 70px;
+}
+
+.feature-text {
+  line-height: 1.71;
+  color: #757575;
 }
 
 @media screen and (max-width: 1199px) {
@@ -951,8 +958,7 @@ img {
 }
 
 .team-list__info {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
 }
 
 .team-list__text {
@@ -1026,7 +1032,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 92px;
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -1040,6 +1047,7 @@ img {
 
 .clients-list__icon {
   width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 

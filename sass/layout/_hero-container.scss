@@ -19,7 +19,11 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url("../images/hero/Hero480@2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero/Hero480@2x.jpg");
   }
 
   @media screen and (min-width: $tablet) {
@@ -32,7 +36,11 @@
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/Hero768@2x.jpg");
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Hero768@2x.jpg");
     }
   }
 
@@ -50,7 +58,11 @@
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/Hero1200@2x.jpg");
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero/Hero1200@2x.jpg");
     }
   }
 
@@ -58,18 +70,16 @@
     color: $primary-title-color;
     margin: 0 auto;
     margin-bottom: 30px;
-    width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
-  // @media screen and (min-width: $desktop) {
-  //     font-size: 44px;
-  //     line-height: 1.36;
-
-  // }
+  @media screen and (min-width: $desktop) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .header-btn {
