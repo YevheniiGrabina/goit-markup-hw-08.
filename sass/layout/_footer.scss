@@ -243,7 +243,6 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  position: relative;
   background: #2196f3;
   border-color: transparent;
   color: $primary-title-color;
@@ -251,7 +250,6 @@
 
   @media screen and (max-width: 767px) {
     margin: 0 auto;
-    display: flex;
   }
   @media screen and (min-width: $desktop) {
     margin-left: 12px;
@@ -264,9 +262,9 @@
   }
 }
 .footer-form__icon {
-  position: absolute;
   margin-left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 13px;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  vertical-align: middle;
 }
