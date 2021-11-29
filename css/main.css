@@ -486,10 +486,10 @@ img {
 }
 
 .mobile-nav__link {
+  display: block;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 8vw;
+  line-height: 1.76;
   letter-spacing: 0.02em;
   color: #212121;
 }
@@ -503,12 +503,18 @@ img {
 }
 
 .mobile-nav__link--current {
+  display: block;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17;
-  text-align: center;
+  font-size: 8vw;
+  line-height: 1.76;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-nav__link--current {
+    font-size: 40px;
+  }
 }
 
 .mobile-menu__auth {
@@ -525,26 +531,33 @@ img {
 
 .mobile-auth__tel {
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
+  font-size: 8vw;
+  line-height: 1.78;
   letter-spacing: 0.02em;
   color: #2196f3;
 }
 
 .mobile-auth__mail {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: #212121;
+  font-size: 5vw;
+  line-height: 28px;
+  letter-spacing: 1.67;
+  color: #757575;
 }
 
 .mobile-auth__mail:hover, .mobile-auth__mail:focus {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .mobile-auth {
+    font-size: 34px;
+  }
+}
+
 .mobile-network {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .mobile-network__link {
